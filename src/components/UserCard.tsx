@@ -34,7 +34,7 @@ export function UserCard({
       </div>
 
       <Link
-        to="/"
+        to={`/repos/${login}`}
         className="bg-yellow-800 px-4 py-4 mt-2 rounded-xl text-gray-950 font-bold text-sm uppercase hover:bg-yellow-600 leading-tight"
       >
         Explore os projetos mais destacados
