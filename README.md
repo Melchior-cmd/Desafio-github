@@ -29,7 +29,7 @@ FRONT-END
 </div>
  
 <div align="center">
-<img src="https://private-user-images.githubusercontent.com/54017816/292480929-2b4315e4-8ec6-40a0-a75d-46975575c14b.png" />
+<img src="          ![desafio-image](https://github.com/Melchior-cmd/Desafio-github/assets/54017816/699ac8c2-b65b-4460-9545-15041a0c289c)" />
 </div>
 <span>Tela Incial da Aplicação</span>
 
