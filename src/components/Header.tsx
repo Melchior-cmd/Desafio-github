@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export function Header() {
   return (
-    <div className="flex bg-gray-800  absolute w-full max-auto items-center p-4 top-0 gap-2 h-20">
+    <div className="flex bg-gray-800  fixed w-full max-auto items-center p-4 top-0 gap-2 h-20">
       <img src={logo} alt="logo" width={50} height={50} />
       <img
         src={logoName}
