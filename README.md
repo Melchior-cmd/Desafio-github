@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+# Desafio-Github
+Bem-vindo ao Desafio GitHub, um projeto inovador que visa simplificar e aprimorar a experiência de exploração de repositórios no GitHub. Este explorador avançado utiliza a poderosa API do GitHub para oferecer recursos robustos, permitindo que desenvolvedores e entusiastas descubram, analisem e interajam com uma variedade de projetos de código aberto.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## <h1><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png" width="28px"/> Tecnologias</h1>
+<ul>
+<li>
+FRONT-END
 
-Currently, two official plugins are available:
+<div>
+<ul>
+<li>React + Typescript + </li>
+<li>TailwindCSS para estilização</li>
+<li>react-router-dom para interação entre as telas</li>
+<li>Axios para fazer integração com API</li>
+<li>jest para fazer teste Automatizado</li>
+<ul>
+</li>
+</ul>
+<ul>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Imagens
+  
+<div align="center">
+<h1>
+FRONT-END
+</h1>
+</div>
+ 
+<div align="center">
+<img src="https://user-images.githubusercontent.com/54017816/279569802-130460ef-8ba3-4f6b-bc11-5de00f218ee3.jpg" />
+</div>
+<span>Tela Incial da Aplicação</span>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## <h1><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png" width="28px"/> Configurações</h1>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+Front-end
+
+<strong>Apos baixa o projeto</strong>
+
+<strong>npm i ou npm install</strong>
+
+<strong>npm run dev</strong>
