@@ -64,13 +64,13 @@ export function Header() {
         >
           <Link
             to="/"
-            className="flex h-full text-white  hover:text-gray-200 hover:bg-gray-500"
+            className="flex justify-center items-center h-full text-white  hover:text-gray-200 hover:bg-gray-500 text-xl mb-2"
           >
             Home
           </Link>
           <Link
             to="/user"
-            className=" flex h-full text-white   hover:text-gray-200 hover:bg-gray-500"
+            className=" flex justify-center items-center h-full text-white   hover:text-gray-200 hover:bg-gray-500 text-xl "
           >
             Buscar
           </Link>
