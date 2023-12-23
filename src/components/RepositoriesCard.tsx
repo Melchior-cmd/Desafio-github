@@ -32,7 +32,7 @@ export function RepositoriesCard({
         <Link
           to={html_url}
           target="_blank"
-          className="text-center bg-yellow-800 px-2 md:px-4 md:py-4 py-2 mt-2 rounded-xl text-gray-950 font-bold text-sm uppercase hover:bg-yellow-600 leading-tight "
+          className="text-center bg-yellow-800 px-2 md:px-4 md:py-4 py-2 mt-2 rounded-xl text-gray-950 font-bold text-sm uppercase hover:bg-yellow-600 leading-tight"
         >
           Visualizar repositorio
         </Link>
