@@ -18,7 +18,7 @@ export function RepositoriesCard({
           {`${description.slice(0, 150)}`}
         </span>
 
-        <div className="flex ">
+        <div className="grid sm:flex">
           <p className="text-gray-400 flex gap-2 mt-2 cursor-pointer hover:text-blue-500">
             <FaLaptopCode className="mt-1" />
             {language}
@@ -32,7 +32,7 @@ export function RepositoriesCard({
         <Link
           to={html_url}
           target="_blank"
-          className=" bg-yellow-800 px-4 py-2 mt-2 rounded-xl text-gray-950 font-bold text-sm uppercase hover:bg-yellow-600 leading-tight "
+          className="text-center bg-yellow-800 px-2 md:px-4 md:py-4 py-2 mt-2 rounded-xl text-gray-950 font-bold text-sm uppercase hover:bg-yellow-600 leading-tight "
         >
           Visualizar repositorio
         </Link>

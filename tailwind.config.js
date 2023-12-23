@@ -2,6 +2,14 @@
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    variants: {
+      extend: {
+        display: ['group-focus'],
+        opacity: ['group-focus'],
+        inset: ['group-focus']
+      },
+    },
+
     extend: {
       fontFamily: {
         sans: 'Roboto, sans-serif',

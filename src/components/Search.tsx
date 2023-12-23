@@ -15,9 +15,11 @@ export function Search({ loadUser }: SearchProps) {
   }
 
   return (
-    <div className="flex flex-col bg-gray-700 p-8 border border-gray-500 h-52 w-3/12 mb-12 justify-center items-center gap-4 ">
+    <div className="flex flex-col bg-gray-700 p-8 border border-gray-500 w-10/12 md:w-96 h-1/4  mb-8 justify-center items-center gap-4 mt-8 ">
       <div className="">
-        <h2 className="text-gray-50 text-2xl">Pesquise por um usuário:</h2>
+        <h2 className="text-gray-50 text-xl md:text-2xl">
+          Pesquise por um usuário:
+        </h2>
       </div>
       <div className="relative flex gap-2 p-4 lg:w-80">
         <input

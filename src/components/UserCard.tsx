@@ -10,7 +10,7 @@ export function UserCard({
   bio,
 }: UserProps) {
   return (
-    <div className="flex flex-col bg-gray-700 p-8 border border-gray-500 justify-center items-center gap-5 ">
+    <div className="flex flex-col bg-gray-700 p-2 border border-gray-500 justify-center items-center gap-5 h-1/2 w-10/12 md:h-2/4 md:w-1/4">
       <img
         src={avatar_url}
         alt={login}
@@ -21,7 +21,11 @@ export function UserCard({
       <h2 className="text-white">{login}</h2>
       {email && <h2 className="text-white">{email}</h2>}
 
-      {bio && <h2 className="text-white truncate w-[25.9rem]">{bio}</h2>}
+      {bio && (
+        <span className="md:w-full inline-block py-2 px-2  whitespace-no-wrap overflow-hidden overflow-ellipsis text-white ">
+          {`${bio.slice(0, 150)}`}
+        </span>
+      )}
       <div className="flex gap-4">
         <div className="flex flex-col px-4 border-r border-gray-500">
           <p className="text-white">Seguidores</p>
@@ -35,7 +39,7 @@ export function UserCard({
 
       <Link
         to={`/repos/${login}`}
-        className="bg-yellow-800 px-4 py-4 mt-2 rounded-xl text-gray-950 font-bold text-sm uppercase hover:bg-yellow-600 leading-tight"
+        className="bg-yellow-800 text-center px-4 md:px-3 py-2 md:py-4 mt-2 rounded-xl text-gray-950 font-bold text-sm uppercase hover:bg-yellow-600 leading-tight"
       >
         Explore os projetos mais destacados
       </Link>
