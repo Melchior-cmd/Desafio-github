@@ -1,52 +1,80 @@
 import logo from "../assets/github-logo.png";
 import logoName from "../assets/github-logo-name.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { FiX, FiMenu } from "react-icons/fi";
 
 export function Header() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
   return (
-    <nav className=" bg-gray-800 fixed  w-full p-2 top-0 left-0  h-20">
-      <div className="container  flex justify-start items-center mt-2">
-        <img src={logo} alt="logo" width={50} height={50} />
-        <img
-          src={logoName}
-          alt="logo"
-          width={60}
-          height={60}
-          className="mr-[12rem]   sm:mr-[29rem]"
-        />
-        <div className="hidden md:flex items-center pr-10 text-base font-semibold ">
-          <Link to="/" className="text-white py-4 px-6 hover:text-gray-200 ">
+    <nav className="relative z-40 ">
+      <div className="hidden sm:block ">
+        <div className=" flex  align-middle items-center px-4 py-2 md:py-3 md:px-6 lg:px-8 lg:py-4 xl:px-12 shadow-md bg-gray-800  w-full p-2 top-0 left-0  h-20">
+          <div className=" flex  items-center mt-2">
+            <img src={logo} alt="logo" width={50} height={50} />
+            <img
+              src={logoName}
+              alt="logo"
+              width={60}
+              height={60}
+              className="mr-[12rem]   sm:mr-[29rem]"
+            />
+          </div>
+          <ul className="flex list-none flex-row space-x-8 lg:space-x-10 xl:space-x-4 text-gray-500">
+            <Link to="/" className="text-white py-4 px-4 hover:text-gray-200 ">
+              Home
+            </Link>
+            <Link
+              to="/user"
+              className="text-white py-4 px-4  hover:text-gray-200"
+            >
+              Buscar
+            </Link>
+          </ul>
+        </div>
+      </div>
+
+      {/* navbar for small devices */}
+      <div className="sm:hidden">
+        <div className="flex bg-gray-800 justify-between align-middle items-center px-4 py-2 z-20">
+          <div className=" flex  items-center mt-2">
+            <img src={logo} alt="logo" width={50} height={50} />
+            <img src={logoName} alt="logo" width={60} height={60} />
+          </div>
+          <span>
+            {isMenuOpen ? (
+              <FiX
+                className=" py-1  mx-1 rounded   hover:bg-gray-200 w-9 h-9 text-gray-950 bg-white cursor-pointer"
+                onClick={() => setMenuOpen(false)}
+              />
+            ) : (
+              <FiMenu
+                className="py-1 mx-1 rounded hover:bg-gray-200 w-9 h-9 text-gray-950 bg-white cursor-pointer"
+                onClick={() => setMenuOpen(true)}
+              />
+            )}
+          </span>
+        </div>
+
+        <div
+          className={`list-none space-y-2 pt-2 py-2 px-2 text-gray-500 bg-gray-800 shadow-md -z-10 absolute w-full ${
+            isMenuOpen ? "-translate-y-0" : "-translate-y-full"
+          } transition-all ease-in-out`}
+        >
+          <Link
+            to="/"
+            className="flex h-full text-white  hover:text-gray-200 hover:bg-gray-500"
+          >
             Home
           </Link>
           <Link
             to="/user"
-            className="text-white py-4 px-6  hover:text-gray-200"
+            className=" flex h-full text-white   hover:text-gray-200 hover:bg-gray-500"
           >
             Buscar
           </Link>
         </div>
-
-        <button className="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none bg-gray-50 hover:bg-gray-300 group">
-          <div className="w-5 h-1 bg-gray-600 mb-1"></div>
-          <div className="w-5 h-1 bg-gray-600 mb-1"></div>
-          <div className="w-5 h-1 bg-gray-600 mb-1"></div>
-          <div className="absolute top-0 -right-full h-screen w-8/12 bg-gray-700 border border-gray-500 opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
-            <ul className="flex flex-col items-center w-full text-base cursor-pointer pt-10">
-              <Link
-                to="/"
-                className="text-white py-4 px-6 hover:text-gray-200 w-full hover:bg-gray-300"
-              >
-                Home
-              </Link>
-              <Link
-                to="/user"
-                className="text-white py-4 px-6  hover:text-gray-200 hover:bg-gray-300 w-full"
-              >
-                Buscar
-              </Link>
-            </ul>
-          </div>
-        </button>
       </div>
     </nav>
   );

@@ -44,7 +44,7 @@ export function SearchRepos() {
     <>
       <Header />
       <BackButton />
-      <div className="flex flex-col justify-center items-center bg-gray-700 p-8 border border-gray-500 gap-8 mt-12 w-full h-full">
+      <div className="flex flex-col justify-center items-center bg-gray-700 p-8 gap-8 w-full h-full">
         <h2 className="text-white items-center mt-8 text-2xl">
           explore o repositório do {username} para conhece melhor sobre seus
           trabalhos.

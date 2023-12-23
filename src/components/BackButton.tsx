@@ -8,7 +8,7 @@ export function BackButton() {
     <>
       <button
         onClick={() => navigate(-1)}
-        className="fixed px-2 py-2 border-none rounded-sm  mt-8 text-4xl text-yellow-800 hover:text-yellow-700"
+        className="absolute px-2 py-2 border-none rounded-md  mt-2 text-4xl text-yellow-800 hover:text-yellow-700 hover:bg-gray-800"
       >
         <IoReturnUpBackSharp />
       </button>

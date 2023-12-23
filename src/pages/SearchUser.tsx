@@ -7,6 +7,7 @@ import { Header } from "../components/Header";
 import { UserCard } from "../components/UserCard";
 
 import { Spinner } from "../components/Spinner";
+import { BackButton } from "../components/BackButton";
 
 export function SearchUser() {
   const [user, setUser] = useState<UserProps | null>(null);
@@ -46,6 +47,7 @@ export function SearchUser() {
   return (
     <>
       <Header />
+      <BackButton />
       <div className=" w-full h-screen bg-gray-700 ">
         <div className="flex flex-col  h-screen  justify-center items-center ">
           <Search loadUser={loadUser} />
