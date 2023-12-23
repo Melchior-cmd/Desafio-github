@@ -19,7 +19,7 @@ export function Home() {
 
             <Link
               to="/user"
-              className="text-center w-2/3  lg:w-44 sm:w-32 bg-yellow-800 px-4 lg:py-6  py-2 mt-10 rounded-xl text-gray-950 font-bold text-xs lg:text-sm uppercase hover:bg-yellow-600 leading-tight"
+              className="text-center w-2/3  lg:w-44 sm:w-32 bg-yellow-800 px-4 lg:py-6  py-4 mt-8 rounded-xl text-gray-950 font-bold text-xs lg:text-sm uppercase hover:bg-yellow-600 leading-tight"
               type="submit"
             >
               Consultar usuario
