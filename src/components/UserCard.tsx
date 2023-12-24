@@ -10,7 +10,7 @@ export function UserCard({
   bio,
 }: UserProps) {
   return (
-    <div className="flex flex-col bg-gray-700 p-2 border border-gray-500 justify-center items-center gap-5 h-1/2 w-10/12 lg:h-2/4 lg:w-1/4">
+    <div className="flex flex-col bg-gray-700 p-2 border border-gray-500 justify-center items-center gap-3 xl:gap-5 h-1/2 w-10/12 lg:h-2/4 lg:w-1/4">
       <img
         src={avatar_url}
         alt={login}
@@ -22,7 +22,7 @@ export function UserCard({
       {email && <h2 className="text-white">{email}</h2>}
 
       {bio && (
-        <span className="md:w-full md:h-full text-center inline-block py-1 px-1  whitespace-no-wrap overflow-hidden overflow-ellipsis text-white ">
+        <span className="w-full h-full text-center inline-block py-1 px-1  whitespace-no-wrap overflow-hidden overflow-ellipsis text-white ">
           {`${bio.slice(0, 150)}`}
         </span>
       )}
