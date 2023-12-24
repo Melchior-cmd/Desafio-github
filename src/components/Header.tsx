@@ -9,6 +9,7 @@ export function Header() {
 
   return (
     <nav className="relative z-40 ">
+      {/* barra de navegação para dispositivos maiores */}
       <div className="hidden sm:block ">
         <div className=" flex  align-middle items-center px-4 py-2 md:py-3 md:px-6 lg:px-8 lg:py-4 xl:px-12 shadow-md bg-gray-800  w-full p-2 top-0 left-0  h-20">
           <div className=" flex  items-center mt-2">
@@ -34,8 +35,7 @@ export function Header() {
           </ul>
         </div>
       </div>
-
-      {/* navbar for small devices */}
+      {/* barra de navegação para dispositivos pequenos */}
       <div className="sm:hidden">
         <div className="flex bg-gray-800 justify-between align-middle items-center px-4 py-2 z-20">
           <div className=" flex  items-center mt-2">
